@@ -1,41 +1,39 @@
 # Ragdoll Range
 
-Soukromý fyzikální playground: first-person střelba, aktivní ragdolly, fyzikální předměty a výbušné sudy. Zatím prototyp pro hraní a testování s přáteli.
+A private physics playground with first-person shooting, active ragdolls, interactive props, and explosive barrels. An early prototype for testing with friends.
 
-Tento repozitář obsahuje jen popis hry. Hotové buildy jsou v sekci **Releases**; zdrojový projekt zde není zveřejněný.
+This repository contains the player guide only. Download finished game builds from **[Releases](https://github.com/Blueapple77/ragdoll-range/releases)**. The source project is not included.
 
-## Stažení a spuštění
+## Download and play
 
-Otevři **Releases** a stáhni přílohu pro svůj systém:
+- **Windows x64:** download and run `RagdollRange.exe`. No installation or Godot runtime required.
+- **macOS:** download `RagdollRange-macOS.zip`, extract it, and open `Ragdoll Range.app`. Supports Intel (macOS 11+) and Apple Silicon (macOS 13+). This build is ad-hoc signed, not notarized by Apple, and has not yet been tested on a Mac. macOS may require permission in Privacy & Security settings.
 
-- **Windows x64:** `RagdollRange.exe`. Stačí spustit jediný soubor, bez instalace Godotu.
-- **macOS:** `RagdollRange-macOS.zip`. Rozbal a otevři `Ragdoll Range.app`. Obsahuje Intel i Apple Silicon variantu; vyžaduje macOS 11 na Intelu, macOS 13 na Apple Silicon. Build má ad-hoc podpis, není notarizovaný Applem a jeho spuštění zatím nebylo ověřeno na Macu. macOS může požadovat povolení v nastavení Soukromí a zabezpečení.
+To access this private repository, sign in with an invited GitHub account and accept the invitation.
 
-Ke stažení ze soukromého repozitáře musíš být přihlášený na pozvaném GitHub účtu a přijmout pozvánku.
+## Controls
 
-## Ovládání
-
-| Akce | Ovládání |
+| Action | Control |
 | --- | --- |
-| Pohyb / běh | WASD / Shift |
-| Skok | Mezerník |
-| Míření / střelba | Myš / levé tlačítko |
-| Pistole / brokovnice / minigun | 1 / 2 / 3 |
-| Přidání NPC pod zaměřovač | Pravé tlačítko |
-| Nabídka NPC a všech předmětů | Stisk kolečka |
-| Nastavení parametrů | F2 |
-| Obnovení arény | R |
-| Pixelový filtr | P |
-| Uvolnění kurzoru / zavření nabídky | Esc |
-| Ukončení | Zavření okna |
+| Move / sprint | WASD / Shift |
+| Jump | Space |
+| Aim / fire | Mouse / left click |
+| Pistol / shotgun / minigun | 1 / 2 / 3 |
+| Spawn NPC at crosshair | Right click |
+| NPC and prop spawn menu | Middle click |
+| Gameplay settings | F2 |
+| Reset arena | R |
+| Toggle pixel filter | P |
+| Release cursor / close menu | Esc |
+| Quit | Close the window |
 
-## Co vyzkoušet
+## Things to try
 
-- NPC reagují na zásahy podle zasažené části těla, vyrovnávají rovnováhu a po přežitém pádu se mohou zvednout.
-- Sílu, poškození a kadenci zbraní změníš ve F2. Silné zásahy odhazují těla do vzduchu.
-- Bedny, běžné sudy a koule jsou nezničitelné, ale reagují fyzikou na střelbu, NPC i exploze.
-- Červené sudy TNT mají zdraví a mohou spustit řetězový výbuch. Ve F2 nastavíš jejich zdraví, poloměr, poškození, sílu i zdvih exploze.
-- Výbuchy odhazují a roztáčejí předměty. Zasahují i hráče; po vyčerpání HP se vrátíš na start.
-- R obnoví i vybuchlé sudy. Nastavení F2 platí pro aktuální běh, některé změny zdraví pro nové objekty nebo po resetu.
+- NPCs react to the body part you hit, try to regain their balance, and can get up after surviving a fall.
+- Adjust weapon damage, impulse, and fire rate with F2. Powerful shots launch bodies through the air.
+- Crates, ordinary barrels, and balls are indestructible but physically interact with shots, NPCs, and explosions.
+- Red TNT barrels have health and can trigger chain reactions. Adjust their health, explosion radius, damage, impulse, and upward lift with F2.
+- Explosions launch and spin props. They also damage the player; losing all health returns you to the starting position.
+- R restores NPCs and props, including exploded barrels. F2 settings last for the current session; health changes marked new / reset apply to newly spawned objects or after a reset.
 
-Prototyp se průběžně mění. Když narazíš na problém, napiš do Issues, co jsi udělal, jaké jsi měl nastavení a jaký systém používáš.
+Report problems in Issues with reproduction steps, your settings, and your operating system.
